@@ -95,10 +95,10 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-    var questionFourReturnArray = [];
-  var aPlusB = sum((sumArr[0]), (sumArr[1]));
+    let questionFourReturnArray = [];
+  let aPlusB = sum((sumArr[0]), (sumArr[1]));
   aPlusB = aPlusB[0];
-  var finalSum = sum(aPlusB, sumArr[2])[0];
+  let finalSum = sum(aPlusB, sumArr[2])[0];
   questionFourReturnArray[0] = finalSum;
 
   questionFourReturnArray[1] = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${finalSum} is their sum.`
@@ -109,7 +109,7 @@ function sumArray(sumArr) { //eslint-disable-line
 
 // Here is the test for sumArray(); uncomment it to run it
 
- testSumArray(testArray);
+ //testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -125,11 +125,23 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
-}
+    let questionFiveReturnArray = [];
+   
+    let aTimesB = multiply((multArr[0]), (multArr[1]));
+    aTimesB = aTimesB[0];
+  
+    
+    let finalProduct = multiply(aTimesB, multArr[2]);
+    finalProduct = finalProduct[0];
+    questionFiveReturnArray[0] = finalProduct;
+  
+   
+    questionFiveReturnArray[1] = `The numbers ${multArr[0]},${multArr[1]},${multArr[2]} have a product of ${finalProduct}.`
+   
+    return questionFiveReturnArray;}
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+ testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
