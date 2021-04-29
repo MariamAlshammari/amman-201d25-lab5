@@ -11,8 +11,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a, b) { 
    /* let theSum = a+b; 
-    let message = `The sum of ${a} and ${b} is ${theSum}.`;
-    return [theSum, message];*/
+    return [theSum,`The sum of ${a} and ${b} is ${theSum}.`];*/
 }
 
 
@@ -32,9 +31,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-    let theMultiply = a*b; 
-    //let message = `The multiply of ${a} and ${b} is ${theMultiply}.`;
-    return [theMultiply, `The multiply of ${a} and ${b} is ${theMultiply}.`];
+    let output = a*b; 
+    
+    return [output, `The product of ${a} and ${b} is ${output}.`];
 
 }
 
