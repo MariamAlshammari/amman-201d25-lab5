@@ -166,15 +166,15 @@ let testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
-    var questionSixArray = [];
+    let questionSixArray = [];
 
-    var numberOfElements = dynamicArray.length;
+    let numberOfElements = dynamicArray.length;
 
-    var product;
+    let product;
 
-    var value = dynamicArray[0];
+    let value = dynamicArray[0];
 
-  for (var i = 1; i < numberOfElements + 1; i++) {
+  for (let i = 1; i < numberOfElements + 1; i++) {
     product = multiply(value, i);
     value = product[0];
     console.log(`value is ${value}`);
