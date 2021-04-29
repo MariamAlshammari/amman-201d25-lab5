@@ -10,15 +10,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { 
-    let theSum = a+b; 
+   /* let theSum = a+b; 
     let message = `The sum of ${a} and ${b} is ${theSum}.`;
-    return [theSum, message];
+    return [theSum, message];*/
 }
 
 
 
 // Here is the test for sum(); uncomment it to run it
- testSum(4, 7);
+// testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -32,14 +32,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-    /*let theMultiply = a*b; 
-    let message = `The multiply of ${a} and ${b} is ${theMultiply}.`;
-    return [theMultiply, message];
-*/
+    let theMultiply = a*b; 
+    //let message = `The multiply of ${a} and ${b} is ${theMultiply}.`;
+    return [theMultiply, `The multiply of ${a} and ${b} is ${theMultiply}.`];
+
 }
 
 // Here is the test for multiply(); uncomment it to run it
- //testMultiply(5,9);
+ testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
