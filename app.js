@@ -10,8 +10,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { 
-   /* let theSum = a+b; 
-    return [theSum,`The sum of ${a} and ${b} is ${theSum}.`];*/
+    let theSum = a+b; 
+    return [theSum,`The sum of ${a} and ${b} is ${theSum}.`];
 }
 
 
@@ -38,7 +38,7 @@ function multiply(a, b) { //eslint-disable-line
 }
 
 // Here is the test for multiply(); uncomment it to run it
- testMultiply(5,9);
+ //testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -54,12 +54,43 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
+/*
+function sumAndMultiply(a, b, c) {
+    var h = sum(a, b)[0];
+   var g = sum(h, c)[0];
+   var x = multiply(a, b)[0];
+   var y = multiply(x, c)[0];
 
-}
+
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+ testSumAndMultiply(4,7,5);
+   return [g, y, +a + " and " + b + " and " + c + " sum to " + g + ".", "The product of " + a + " and " + b + " and " + c + " is " + y + "."];
+}
+sumAndMultiply();*/
+
+function sumAndMultiply(a, b, c) { //eslint-disable-line
+
+    let sumAndMultiplyArray =[];
+
+    let aPlusB = sum(a,b)[0];
+
+    let finalSum = sum(aPlusB, c)[0];
+    sumAndMultiplyArray[0] = finalSum;
+  
+    let aTimesB = multiply(a, b)[0];
+    let finalProduct = multiply(aTimesB, c)[0];
+    sumAndMultiplyArray[1] = finalProduct;
+  
+    sumAndMultiplyArray[2] = `${a} and ${b} and ${c} sum to ${finalSum}.`;
+    sumAndMultiplyArray[3] = `The product of ${a} and ${b} and ${c} is ${finalProduct}.`;
+  
+    return sumAndMultiplyArray;
+  }
+
+
+// Here is the test for sumAndMultiply(); uncomment it to run it
+ testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
