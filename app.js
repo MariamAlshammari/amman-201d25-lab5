@@ -95,7 +95,7 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-    let questionFourReturnArray = [];
+  let questionFourReturnArray = [];
   let aPlusB = sum((sumArr[0]), (sumArr[1]));
   aPlusB = aPlusB[0];
   let finalSum = sum(aPlusB, sumArr[2])[0];
@@ -165,6 +165,33 @@ Test this function by hand in the console to get it working, and when you think 
 let testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+
+    let questionSixArray = [];
+
+    let numberOfElements = dynamicArray.length;
+
+    let product;
+
+    let value = dynamicArray[0];
+
+  for (let i = 1; i < numberOfElements + 1; i++) {
+    product = multiply(value, i);
+    value = product[0];
+    console.log(`value is ${value}`);
+  }
+
+  questionSixArray[0] = value;
+
+  dynamicArray = dynamicArray.join(',');
+  questionSixArray[1] = (`The numbers ${dynamicArray} have a product of ${value}.`)
+
+  return questionSixArray;
+}
+  
+
+
+// Here is the test for multiplyArray(); uncomment it to run it
+testMultiplyAnyArray(testDynamicArray);
    
 
 // Here is the test for multiplyArray(); uncomment it to run it
